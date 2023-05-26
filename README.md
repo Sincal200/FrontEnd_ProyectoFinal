@@ -2,7 +2,7 @@
 
 Para la creación de este projecto utilice Vue CLI:  https://cli.vuejs.org/
 
-Para lo íconos y temas del proyecto use PrimeVue: https://primevue.org/
+Para los íconos y temas del proyecto use PrimeVue: https://primevue.org/
 
 
 
