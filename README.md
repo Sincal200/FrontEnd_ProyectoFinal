@@ -1,3 +1,10 @@
+# Infomación
+
+Para la creación de este projecto utilice Vue CLI
+https://cli.vuejs.org/
+
+
+
 # project
 
 ## Project setup
