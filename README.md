@@ -4,7 +4,7 @@ Para la creación de este projecto utilice Vue CLI:  https://cli.vuejs.org/
 
 Para los íconos y temas del proyecto use PrimeVue: https://primevue.org/
 
-Axios para las peticiones a la API
+Axios para las peticiones a la API: https://axios-http.com/
 
 
 
