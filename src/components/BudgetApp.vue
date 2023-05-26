@@ -11,7 +11,7 @@
                 <Column field="status" header="Status"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Budget" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+        <Dialog header="Budget" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
             <br>
             <span class="p-float-label">
                 <InputText id="description" type="text" v-model="budget.description" style="width: 100%"/>
@@ -85,6 +85,18 @@ export default{
                     icon: "pi pi-fw pi-refresh",
                     command: () =>{
                         this.getAll();
+                        this.selectedBudget= {
+                            id: null,
+                            description : null,
+                            amount: null,
+                            status : null
+                        }
+                        this.budget = {
+                            id: null,
+                            description : null,
+                            amount: null,
+                            status : null
+                    }
                     }
                 }
             ],

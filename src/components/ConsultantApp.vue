@@ -12,16 +12,16 @@
                 <Column field="specialization" header="Specialization"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Consultant" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+        <Dialog header="Consultant" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
             <br>
             <span class="p-float-label">
                 <InputText id="name" type="text" v-model="consultant.name" style="width: 100%"/>
-                <label for="name">Nombre</label>
+                <label for="name">Name</label>
              </span>
              <br>
              <span class="p-float-label">
                 <InputText id="phoneNumber" type="text" v-model="consultant.phoneNumber" style="width: 100%" />
-                <label for="phoneNumber">phoneNumber</label>
+                <label for="phoneNumber">PhoneNumber</label>
              </span>
              <br>
              <span class="p-float-label">
@@ -92,9 +92,23 @@ export default{
                     label: "Refesh",
                     icon: "pi pi-fw pi-refresh",
                     command: () =>{
-                        this.getAll();
+                        this.getAll(); 
+                    this.selectedConsultant= {
+                        id: null,
+                        name : null,
+                        phoneNumber: null,
+                        email : null,
+                        specialization: null
+                    }
+                    this.consultant = {
+                        id: null,
+                        name : null,
+                        phoneNumber: null,
+                        email : null,
+                        specialization: null
                     }
                 }
+            }
             ],
             displayModal : false
         }

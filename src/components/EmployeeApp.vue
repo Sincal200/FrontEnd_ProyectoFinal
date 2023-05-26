@@ -11,16 +11,16 @@
                 <Column field="email" header="Email"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Employee" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+        <Dialog header="Employee" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
             <br>
             <span class="p-float-label">
                 <InputText id="name" type="text" v-model="employee.name" style="width: 100%"/>
-                <label for="name">name</label>
+                <label for="name">Name</label>
              </span>
              <br>
              <span class="p-float-label">
                 <InputText id="jobTitle" type="text" v-model="employee.jobTitle" style="width: 100%" />
-                <label for="jobTitle">jobTitle</label>
+                <label for="jobTitle">JobTitle</label>
              </span>
              <br>
              <span class="p-float-label">
@@ -83,6 +83,18 @@ export default{
                     icon: "pi pi-fw pi-refresh",
                     command: () =>{
                         this.getAll();
+                        this.selectedEmployee= {
+                            id: null,
+                            name : null,
+                            jobTitle: null,
+                            email : null
+                        }
+                        this.employee = {
+                            id: null,
+                            name : null,
+                            jobTitle: null,
+                            email : null
+                    }
                     }
                 }
             ],

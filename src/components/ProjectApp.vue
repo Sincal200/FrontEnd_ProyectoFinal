@@ -142,6 +142,33 @@ export default{
                     icon: "pi pi-fw pi-refresh",
                     command: () =>{
                         this.getAll();
+                        this.selectedProject= {
+                            id: null,
+                            project : null,
+                            dueDate : null,
+                            leader: null,
+                            consultant: null,
+                            member: null,
+                            member1: null,
+                            member2: null,
+                            member3: null,
+                            member4: null,
+                            performance: null
+                        }
+                        this.project = {
+                            id: null,
+                            project : null,
+                            dueDate : null,
+                            leader: null,
+                            consultant: null,
+                            member: null,
+                            member1: null,
+                            member2: null,
+                            member3: null,
+                            member4: null,
+                            performance: null
+                    }
+
                     }
                 }
             ],
