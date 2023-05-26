@@ -11,7 +11,8 @@
                 <Column field="status" header="Status"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Budget" :visible.sync="displayModal"  :modal="true">
+        <Dialog header="Create Budget" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+            <br>
             <span class="p-float-label">
                 <InputText id="description" type="text" v-model="budget.description" style="width: 100%"/>
                 <label for="description">Description</label>

@@ -11,10 +11,11 @@
                 <Column field="email" header="Email"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Employee" :visible.sync="displayModal"  :modal="true">
+        <Dialog header="Create Employee" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+            <br>
             <span class="p-float-label">
                 <InputText id="name" type="text" v-model="employee.name" style="width: 100%"/>
-                <label for="name">Nombre</label>
+                <label for="name">name</label>
              </span>
              <br>
              <span class="p-float-label">

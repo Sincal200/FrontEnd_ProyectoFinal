@@ -12,7 +12,8 @@
                 <Column field="specialization" header="Specialization"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Consultant" :visible.sync="displayModal"  :modal="true">
+        <Dialog header="Create Consultant" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+            <br>
             <span class="p-float-label">
                 <InputText id="name" type="text" v-model="consultant.name" style="width: 100%"/>
                 <label for="name">Nombre</label>

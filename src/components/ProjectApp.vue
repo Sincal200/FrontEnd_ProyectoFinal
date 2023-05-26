@@ -18,7 +18,8 @@
                 <Column field="performance" header="Performance"></Column>
             </DataTable>
         </Panel>
-        <Dialog header="Create Project" :visible.sync="displayModal"  :modal="true">
+        <Dialog header="Create Project" :visible.sync="displayModal"  :modal="true" :closeOnEscape="true">
+            <br>
             <span class="p-float-label">
                 <InputText id="project" type="text" v-model="project.project" style="width: 100%"/>
                 <label for="project">Name</label>
