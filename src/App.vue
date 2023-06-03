@@ -9,12 +9,12 @@
     </div>
     <div style="clear: both;"></div> <!-- Limpiar el flujo de elementos -->
     
-    <div style="margin: 0 auto; width: 50%; margin-top: 18.5px;">
-      <BudgetApp/>
+    <div style="text-align: center;  margin-top:18.5px ; margin-top: 50px;">
+      <ProjectApp/>
     </div>
     <br>
-    <div style="text-align: center;  margin-top:18.5px ;">
-      <ProjectApp/>
+    <div style="margin: 0 auto; width: 50%; margin-top: 18.5px;">
+      <BudgetApp/>
     </div>
   </div>
 </template>
